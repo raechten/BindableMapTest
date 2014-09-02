@@ -20,7 +20,7 @@ namespace BindableMapTest.Pages
 		{
 			BindingContext = new MapViewModel();;
 
-			var mapSpan = MapSpan.FromCenterAndRadius(Location.DefaultPosition, Distance.FromKilometers(25));
+			var mapSpan = MapSpan.FromCenterAndRadius(Location.DefaultPosition, Distance.FromKilometers(45));
 
 			_map = new ExtendedMap(mapSpan);
 			_map.ShowDetailCommand = ViewModel.ShowDetailCommand;

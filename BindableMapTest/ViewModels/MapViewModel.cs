@@ -88,7 +88,7 @@ namespace BindableMapTest.ViewModels
 			Monkeys.Add(new Monkey
 			{
 				Name = "Monkey " + rnd.Next(1000),
-				Location = new Location { Latitude = 34.0 + rnd.NextDouble()/10.0, Longitude = -118.0 + rnd.NextDouble()/10.0 },
+				Location = new Location { Latitude = 34.0 + rnd.NextDouble()/10.0, Longitude = -118.3 + rnd.NextDouble()/10.0 },
 				Details = "The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as an English name by early researchers.",
 				ImageUrl = "http://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg/220px-Saimiri_sciureus-1_Luc_Viatour.jpg"
 			});
