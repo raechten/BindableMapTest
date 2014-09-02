@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BindableMapTest/Extensions/MapExtensions.cs">
+    <Files>
+      <File FileName="BindableMapTest/Interfaces/IMapModel.cs" Line="1" Column="1" />
+      <File FileName="iOS/Renderers/ExtendedMapRenderer.cs" Line="1" Column="1" />
+      <File FileName="BindableMapTest/Controls/ExtendedMap.cs" Line="1" Column="1" />
+      <File FileName="Android/Renderers/ExtendedMapRenderer.cs" Line="1" Column="1" />
+      <File FileName="BindableMapTest/Pages/MapPage.cs" Line="4" Column="4" />
+      <File FileName="BindableMapTest/Controls/ExtendedPin.cs" Line="1" Column="1" />
+      <File FileName="BindableMapTest/ViewModels/MapViewModel.cs" Line="1" Column="1" />
+      <File FileName="BindableMapTest/Interfaces/ILocation.cs" Line="1" Column="1" />
+      <File FileName="BindableMapTest/Extensions/MapExtensions.cs" Line="4" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/robert/Projects/BindableMapTest/iOS/Renderers/MyMapRenderer.cs" line="129" column="1" />
+      <Breakpoint file="/Users/robert/Projects/BindableMapTest/iOS/Controls/MonkeyMapDelegate.cs" line="99" column="1" />
+      <Breakpoint file="/Users/robert/Projects/BindableMapTest/BindableMapTest/ViewModels/MapViewModel.cs" line="51" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../repositories/bitbucket/SHLP/SHLP.Touch/Controls/MvxImagePickerTask.cs" line="142" offsetX="765" offsetY="2040" expression="imageMetadata" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
