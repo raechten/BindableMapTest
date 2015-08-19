@@ -1,17 +1,28 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BindableMapTest/Extensions/MapExtensions.cs">
+﻿<Properties StartupItem="iOS/BindableMapTest.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6Plus.8.4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Renderers/ExtendedMapRenderer.cs">
     <Files>
-      <File FileName="BindableMapTest/Interfaces/IMapModel.cs" Line="1" Column="1" />
-      <File FileName="iOS/Renderers/ExtendedMapRenderer.cs" Line="1" Column="1" />
       <File FileName="BindableMapTest/Controls/ExtendedMap.cs" Line="1" Column="1" />
-      <File FileName="Android/Renderers/ExtendedMapRenderer.cs" Line="1" Column="1" />
-      <File FileName="BindableMapTest/Pages/MapPage.cs" Line="4" Column="4" />
-      <File FileName="BindableMapTest/Controls/ExtendedPin.cs" Line="1" Column="1" />
-      <File FileName="BindableMapTest/ViewModels/MapViewModel.cs" Line="1" Column="1" />
-      <File FileName="BindableMapTest/Interfaces/ILocation.cs" Line="1" Column="1" />
-      <File FileName="BindableMapTest/Extensions/MapExtensions.cs" Line="4" Column="4" />
+      <File FileName="iOS/Renderers/ExtendedMapRenderer.cs" Line="2" Column="30" />
+      <File FileName="iOS/Controls/MapAnnotation.cs" Line="25" Column="4" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BindableMapTest" expanded="True">
+            <Node name="BindableMapTest" expanded="True">
+              <Node name="Controls" expanded="True" />
+            </Node>
+            <Node name="BindableMapTest.iOS" expanded="True" selected="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Controls" expanded="True" />
+              <Node name="Renderers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

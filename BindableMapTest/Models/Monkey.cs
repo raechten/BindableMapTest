@@ -1,4 +1,4 @@
-﻿using BindableMapTest.Interfaces;
+using BindableMapTest.Interfaces;
 
 namespace BindableMapTest.Models
 {

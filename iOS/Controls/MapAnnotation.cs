@@ -1,9 +1,9 @@
 using System;
-using MonoTouch.MapKit;
+using MapKit;
 using BindableMapTest.Interfaces;
-using MonoTouch.CoreLocation;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreLocation;
+using Foundation;
+using UIKit;
 using BindableMapTest.Models;
 
 namespace BindableMapTest.iOS.Controls
@@ -18,15 +18,10 @@ namespace BindableMapTest.iOS.Controls
 			Location = _model.Location;
 		}
 
-		private CLLocationCoordinate2D _coordinate;
-		public override CLLocationCoordinate2D Coordinate
-		{
-			get { return _coordinate; }
-			set { SetCoordinate(value); }
-		}
+		public override CLLocationCoordinate2D Coordinate { get { return this._coordinate; }}
+		public CLLocationCoordinate2D _coordinate;
 
-		[Export("_original_setCoordinate:")]
-		public void SetCoordinate(CLLocationCoordinate2D coord)
+		public override void SetCoordinate(CLLocationCoordinate2D coord)
 		{
 			_coordinate = coord;
 			var handler = LocationChanged;

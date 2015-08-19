@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using BindableMapTest.Models;
 using BindableMapTest.Interfaces;
 using System.Windows.Input;
