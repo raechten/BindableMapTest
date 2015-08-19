@@ -1,6 +1,6 @@
 using System;
-using MonoTouch.MapKit;
-using MonoTouch.Foundation;
+using MapKit;
+using Foundation;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -82,7 +82,7 @@ namespace BindableMapTest.iOS.Controls
 
 		protected virtual void ReloadAllAnnotations()
 		{
-			_mapView.RemoveAnnotations(_annotations.Values.Select(x => (NSObject)x).ToArray());
+			_mapView.RemoveAnnotations(_annotations.Values.Select(x => (IMKAnnotation)x).ToArray());
 			_annotations.Clear();
 
 			if (_itemsSource == null)

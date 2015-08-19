@@ -1,16 +1,16 @@
-﻿using MonoTouch.MapKit;
+﻿using MapKit;
 using Xamarin.Forms.Platform.iOS;
 using Xamarin.Forms.Maps;
 using System.Collections.Specialized;
-using MonoTouch.CoreLocation;
-using System.Drawing;
+using CoreLocation;
+using CoreGraphics;
 using System.ComponentModel;
 using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using BindableMapTest.iOS.Renderers;
 using BindableMapTest.Controls;
-using MonoTouch.UIKit;
+using UIKit;
 using BindableMapTest.iOS.Controls;
 using BindableMapTest.Models;
 using BindableMapTest.Interfaces;
@@ -61,7 +61,7 @@ namespace BindableMapTest.iOS.Renderers
 		protected override void OnElementChanged(ElementChangedEventArgs<ExtendedMap> e)
 		{
 			base.OnElementChanged(e);
-			SetNativeControl(new MKMapView(RectangleF.Empty));
+			SetNativeControl(new MKMapView(CGRect.Empty));
 			var mapModel = Element;
 			MKMapView mkMapView = Control;
 			mkMapView.RegionChanged += delegate 
@@ -171,6 +171,7 @@ namespace BindableMapTest.iOS.Renderers
 			PositionControls(UIApplication.SharedApplication.StatusBarOrientation);
 			mapView.Add (_centerOnUserLocation);
 
+			mapView.Delegate = null;
 			mapView.Delegate = new PetsMapDelegate (petDetailCommand); // No dragging, but with Callout. Provide command to call when the callout button is clicked
 			_petManager = new MonkeyManager (mapView);
 			mapView.SetRegion (MKCoordinateRegion.FromDistance (new CLLocationCoordinate2D (Location.DefaultPosition.Latitude, Location.DefaultPosition.Longitude), 5000, 5000), true);
@@ -214,11 +215,11 @@ namespace BindableMapTest.iOS.Renderers
 			const int navBarOffset = 44; //UIViewExtensions.GetNavBarOffset(NavigationController);
 			if (toInterfaceOrientation == UIInterfaceOrientation.Portrait ||
 			    toInterfaceOrientation == UIInterfaceOrientation.PortraitUpsideDown) {
-				_centerOnUserLocation.Frame = new RectangleF (bounds.Width - 50, bounds.Height - navBarOffset - 50, 44, 44);
+				_centerOnUserLocation.Frame = new CGRect (bounds.Width - 50, bounds.Height - navBarOffset - 50, 44, 44);
 			} 
 			else 
 			{
-				_centerOnUserLocation.Frame = new RectangleF (bounds.Height - 50, bounds.Width - navBarOffset - 50, 44, 44);
+				_centerOnUserLocation.Frame = new CGRect (bounds.Height - 50, bounds.Width - navBarOffset - 50, 44, 44);
 			}
 		}
 
@@ -229,8 +230,8 @@ namespace BindableMapTest.iOS.Renderers
 
 			var navBarFrame = navController.NavigationBar.Frame;
 			return (navController.NavigationBarHidden) 
-				? navBarFrame.Y 
-					: navBarFrame.Y + navBarFrame.Height;
+				? (float)navBarFrame.Y 
+					: (float)navBarFrame.Y + (float)navBarFrame.Height;
 		}
 	}
 }

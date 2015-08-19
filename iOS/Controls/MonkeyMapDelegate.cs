@@ -1,9 +1,9 @@
 using System;
-using MonoTouch.MapKit;
+using MapKit;
 using BindableMapTest.Interfaces;
-using MonoTouch.CoreLocation;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreLocation;
+using Foundation;
+using UIKit;
 using BindableMapTest.Models;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Collections.Specialized;
 using System.Linq;
 using BindableMapTest.Helpers;
 using System.Windows.Input;
-using System.Drawing;
+using CoreGraphics;
 using System.Threading.Tasks;
 using System.Net.Http;
 
@@ -36,7 +36,7 @@ namespace BindableMapTest.iOS.Controls
 			_petDetailCommand = petDetailCommand;
 		}
 
-		public override MKAnnotationView GetViewForAnnotation(MKMapView mapView, NSObject annotation)
+		public override MKAnnotationView GetViewForAnnotation(MKMapView mapView, IMKAnnotation annotation)
 		{
 			var pet = ((CustomAnnotation)annotation).Model;
 			var petAnnotationType = GetPetAnnotationType (pet);
@@ -47,7 +47,7 @@ namespace BindableMapTest.iOS.Controls
 			{
 				pin = new MapAnnotationView(annotation, petAnnotationType);
 				pin.Image = UIImage.FromBundle(pinImage);
-				pin.CenterOffset = new PointF (0, -15);
+				pin.CenterOffset = new CGPoint (0, -15);
 			}
 			else
 			{
@@ -94,7 +94,7 @@ namespace BindableMapTest.iOS.Controls
 
 		private async Task<UIImageView> GetImage (IMapModel pet)
 		{
-			var imageView = new UIImageView(new RectangleF(5f,5f,75f,75f));
+			var imageView = new UIImageView(new CGRect(5f,5f,75f,75f));
 			imageView.Image = await LoadImage(pet.ImageUrl);
 			return imageView;
 		}

@@ -1,4 +1,4 @@
-﻿using Xamarin.Forms.Maps;
+using Xamarin.Forms.Maps;
 using BindableMapTest.Interfaces;
 using BindableMapTest.Models;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using MonoTouch.MapKit;
+using MapKit;
 using BindableMapTest.Models;
 
 namespace BindableMapTest.iOS.Controls

@@ -1,9 +1,9 @@
 using System;
-using MonoTouch.MapKit;
+using MapKit;
 using BindableMapTest.Interfaces;
-using MonoTouch.CoreLocation;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreLocation;
+using Foundation;
+using UIKit;
 using BindableMapTest.Models;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Collections.Specialized;
 using System.Linq;
 using BindableMapTest.Helpers;
 using System.Windows.Input;
-using System.Drawing;
+using CoreGraphics;
 using System.Threading.Tasks;
 using System.Net.Http;
 

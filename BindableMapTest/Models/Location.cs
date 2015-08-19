@@ -1,4 +1,4 @@
-﻿using BindableMapTest.Interfaces;
+using BindableMapTest.Interfaces;
 using Xamarin.Forms.Maps;
 
 namespace BindableMapTest.Models

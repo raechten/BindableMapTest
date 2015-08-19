@@ -1,4 +1,4 @@
-﻿namespace BindableMapTest.Interfaces
+namespace BindableMapTest.Interfaces
 {
 	public interface IMapModel
 	{
